@@ -95,6 +95,8 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
+  transition: all .5s ease-in-out; /* Extra Credit CSS Transition for Letters */
+  
 }
 
 /* Keyboard */
