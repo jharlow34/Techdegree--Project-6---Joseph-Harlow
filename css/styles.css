@@ -9,6 +9,7 @@
   --color-start: #5b85b7;
   --color-neutral: #445069;
   --color-neutral-light: #D2D2D2;
+  --color-neutral-wrong: orange;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
@@ -95,8 +96,11 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
-  transition: all .5s ease-in-out; /* Extra Credit CSS Transition for Letters */
-  
+  transition: transform 0.5s;
+}
+
+li.letter.show {
+  transform: rotateY(360deg);
 }
 
 /* Keyboard */
@@ -109,8 +113,15 @@ button {
 .chosen {
   background: var(--color-neutral);
   border-radius: 5px;
+  transition: ease-in;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
+  animation: shake 0.5s;
+
+}
+
+.wrongLetter{
+  background: var(--color-neutral-wrong);
 }
 
 .btn__reset {
@@ -134,6 +145,7 @@ button {
   left: 0;
   right: 0;
   border-radius: 5px;
+  z-index: 99;
 }
 
 .title {
