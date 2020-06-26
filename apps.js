@@ -6,11 +6,11 @@ const tries = document.querySelector('#scoreboard ol');
 const title = document.querySelector('.title');
 let missed = 0;
 
-let phrases = ["my precious",
-    "just keep swimming",
-    "why so serious",
-    "nobody puts baby in the corner",
-    "to infinity and beyond",
+let phrases = ["result",
+    "keep going",
+    "don't be sad",
+    "how dare you",
+    "get in!",
     "may the force be with you", 
     "wax on wax off",
     "et phone home" 
@@ -81,7 +81,7 @@ qwerty.addEventListener('click', (event) => {
     checkWin();
 });
 
-// check if the game has been won or lost 
+// is game won/lost 
 function checkWin() {
     let letters = document.getElementsByClassName('letter');
     let shown = document.getElementsByClassName('show');
@@ -111,10 +111,10 @@ function resetGame() {
     const phraseArray = getRandomPhrasesAsArray(phrases);
     console.log(phraseArray);
 
-    // display phrase on webpage
+    // Display phrase on webpage
     addPhraseToDisplay(phraseArray);
 
-    // recreate the keyboard
+    //  keyboard
     removeButton = document.querySelectorAll('button');
     for (let i = 0; i < removeButton.length; i++) {
         removeButton[i].disabled = false;
