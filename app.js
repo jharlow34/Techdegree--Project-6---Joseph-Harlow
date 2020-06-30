@@ -8,9 +8,9 @@ let missed = 0;
 
 let phrases = ["result",
     "keep going",
-    "don't be sad",
+    "dont be sad",
     "how dare you",
-    "get in!",
+    "get in",
     "may the force be with you", 
     "wax on wax off",
     "et phone home" 
